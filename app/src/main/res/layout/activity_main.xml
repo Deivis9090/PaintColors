@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/BarraColores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#605F5F"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Yellow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="#FFFF00"/>
+
+        <ImageButton
+            android:id="@+id/Red"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="#B71C1C"/>
+
+        <ImageButton
+            android:id="@+id/Blue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="#0D47A1"/>
+
+        <ImageButton
+            android:id="@+id/Green"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="#1B5E20"/>
+
+        <ImageButton
+            android:id="@+id/Black"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="#000000"/>
+
+        <ImageButton
+            android:id="@+id/White"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/BarraColores">
+
+        <include layout="@layout/paint_vista"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
